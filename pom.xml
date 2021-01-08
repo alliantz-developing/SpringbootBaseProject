@@ -4,11 +4,11 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>igm</groupId>
-    <artifactId>SpringBootBase</artifactId>
+    <artifactId>AlliantzPrueba</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
 
-    <name>SpringbootBaseProject</name>
+    <name>AlliantzPruebaProject</name>
 
     <properties>
         <start-class>com.igm.SpringbootApp</start-class>
@@ -69,6 +69,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>${springBootversion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
             <version>${springBootversion}</version>
         </dependency>
 

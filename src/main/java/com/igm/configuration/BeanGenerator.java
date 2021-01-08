@@ -12,7 +12,7 @@ public class BeanGenerator {
 
     @Bean
     public CacheManager cacheManager() {
-        return new ConcurrentMapCacheManager("example");
+        return new ConcurrentMapCacheManager("weather");
     }
 
 }

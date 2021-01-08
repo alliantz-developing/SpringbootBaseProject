@@ -20,7 +20,7 @@ changed the name "springboot-app" in the previous step, you should have to chang
 
 After this is working, you can send a Get by using postman or any other method to the app in the address:
 
-```http://localhost:8080/example``` 
+```http://localhost:8080/weather/{ciudad}``` 
 
 Also, the health endpoint is up and accessible under the address
 

@@ -6,7 +6,7 @@ RUN apk update $$ apk upgrade
 RUN apk add openjdk11
 
 # Jar management
-ARG JAR_FILE=target/SpringBootBase-*.jar
+ARG JAR_FILE=target/AlliantzPrueba-*.jar
 COPY ${JAR_FILE} app.jar
 RUN chmod -R +r app.jar
 
