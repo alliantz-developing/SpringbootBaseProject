@@ -28,12 +28,8 @@ public class WeatherController {
     @GetMapping("/weather/{city}")
     public String getAJson(@PathVariable String city) {
         logger.debug("Entering /weather");
-
         WebClient webClient = WebClient.builder().baseUrl(apiUrl + "?q=" + city + "&appid=" + apiKey).build();
-//        String responseSpec = webClient.post().exchange().block().bodyToMono(String.class).block();
-
         InputWeather iw = webClient.post().exchange().block().bodyToMono(InputWeather.class).block();
-
         return new JsonWeatherBuilder(iw).build().toString();
     }
 }
